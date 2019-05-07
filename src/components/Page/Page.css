@@ -1,0 +1,21 @@
+.page {
+    min-height: 50vh;
+    width: 100%;
+    position: absolute;
+    padding: 48px 32px;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: transform 300ms linear;
+}
+
+.page-inner {
+    position: sticky;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    transform: translate(0px);
+    transition: transform 300ms linear;
+}
