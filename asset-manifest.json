@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/paper-lark/seamless-scroll-react/static/css/main.c79d9499.chunk.css",
-    "main.js": "/paper-lark/seamless-scroll-react/static/js/main.1d8c7c6b.chunk.js",
-    "main.js.map": "/paper-lark/seamless-scroll-react/static/js/main.1d8c7c6b.chunk.js.map",
-    "runtime~main.js": "/paper-lark/seamless-scroll-react/static/js/runtime~main.3d41f632.js",
-    "runtime~main.js.map": "/paper-lark/seamless-scroll-react/static/js/runtime~main.3d41f632.js.map",
-    "static/js/2.4cb8172f.chunk.js": "/paper-lark/seamless-scroll-react/static/js/2.4cb8172f.chunk.js",
-    "static/js/2.4cb8172f.chunk.js.map": "/paper-lark/seamless-scroll-react/static/js/2.4cb8172f.chunk.js.map",
-    "index.html": "/paper-lark/seamless-scroll-react/index.html",
-    "precache-manifest.1268d974e489f5a6ef323002ce571a8a.js": "/paper-lark/seamless-scroll-react/precache-manifest.1268d974e489f5a6ef323002ce571a8a.js",
-    "service-worker.js": "/paper-lark/seamless-scroll-react/service-worker.js",
-    "static/css/main.c79d9499.chunk.css.map": "/paper-lark/seamless-scroll-react/static/css/main.c79d9499.chunk.css.map"
+    "main.css": "/seamless-scroll-react/static/css/main.c79d9499.chunk.css",
+    "main.js": "/seamless-scroll-react/static/js/main.f06c661d.chunk.js",
+    "main.js.map": "/seamless-scroll-react/static/js/main.f06c661d.chunk.js.map",
+    "runtime~main.js": "/seamless-scroll-react/static/js/runtime~main.439f760f.js",
+    "runtime~main.js.map": "/seamless-scroll-react/static/js/runtime~main.439f760f.js.map",
+    "static/js/2.4cb8172f.chunk.js": "/seamless-scroll-react/static/js/2.4cb8172f.chunk.js",
+    "static/js/2.4cb8172f.chunk.js.map": "/seamless-scroll-react/static/js/2.4cb8172f.chunk.js.map",
+    "index.html": "/seamless-scroll-react/index.html",
+    "precache-manifest.5d9c1d19deb51e497c25a0f3d4c6efcf.js": "/seamless-scroll-react/precache-manifest.5d9c1d19deb51e497c25a0f3d4c6efcf.js",
+    "service-worker.js": "/seamless-scroll-react/service-worker.js",
+    "static/css/main.c79d9499.chunk.css.map": "/seamless-scroll-react/static/css/main.c79d9499.chunk.css.map"
   }
 }
