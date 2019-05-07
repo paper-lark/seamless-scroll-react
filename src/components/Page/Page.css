@@ -8,7 +8,6 @@
     right: 0;
     box-sizing: border-box;
     overflow: hidden;
-    transition: transform 300ms linear;
 }
 
 .page-inner {

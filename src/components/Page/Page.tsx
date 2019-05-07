@@ -3,6 +3,7 @@ import "./Page.css";
 
 export interface PageProps {
   children: React.ReactNode;
+  hardOffset: number;
   offset: number;
   delta: number;
   style?: CSSProperties;
@@ -13,20 +14,12 @@ export class Page extends React.Component<PageProps> {
   public innerRef = createRef<HTMLDivElement>();
 
   public render() {
-    // TODO: remove?
-    // const screenTop = window.pageYOffset;
-    // const screenBottom = screenTop + window.innerHeight;
-    // const pageTop = this.props.offset;
-    // const height = this.getHeight();
-    // const pageBottom = pageTop + height;
-    // const isInvisible =
-    //   !height || screenTop > pageBottom || screenBottom < pageTop;
-
     return (
       <div
         ref={this.bodyRef}
         className="page"
         style={{
+          top: this.props.hardOffset,
           transform: `translateY(${this.props.offset}px)`,
           ...this.props.style,
         }}

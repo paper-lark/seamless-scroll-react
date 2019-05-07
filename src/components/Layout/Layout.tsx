@@ -6,6 +6,7 @@ import { Page } from "../Page/Page";
 export interface LayoutElementPosition {
   ref: React.RefObject<Page>;
   offset: number;
+  hardOffset: number;
   delta: number;
 }
 
@@ -26,56 +27,69 @@ export class Layout extends React.Component<LayoutProps, LayoutState> {
   };
 
   public componentDidMount() {
-    console.log("Layout mounted");
-
-    document.addEventListener("scroll", this.handleScroll, {
-      passive: false,
-    });
+    document.addEventListener("scroll", this.debouncedHandleScroll);
     this.updateChildrenHeights();
   }
 
   public componentWillUnmount() {
-    document.removeEventListener("scroll", this.handleScroll);
+    document.removeEventListener("scroll", this.debouncedHandleScroll);
   }
 
   public render() {
     const height =
       this.state.height.reduce((prev, current) => prev + current, 0) +
       this.state.delta.reduce((prev, current) => prev + current, 0);
-    return (
-      <div className="layout" style={{ height }}>
-        {this.getPages()}
-      </div>
-    );
+    document.body.style.height = `${height}px`;
+    return <div className="layout">{this.getPages()}</div>;
   }
 
   private handleScroll = (event: Event) => {
     // TODO: implement own
-    event.stopPropagation();
-    event.preventDefault();
     this.forceUpdate();
   }
 
-  private debouncedHandleScroll = _.debounce(this.handleScroll, 5, {
+  private debouncedHandleScroll = _.debounce(this.handleScroll, 16, {
     trailing: true,
     leading: true,
   });
 
   private getPages() {
+    const { height, delta } = this.state;
     const screenTop = window.pageYOffset;
-    let offset = 0;
-    let tempOffset = 0;
+    const screenHeight = window.innerHeight;
+    let globalOffset = 0;
+
     return this.props.children.map((child, i) => {
-      const ref = createRef<Page>();
-      const currentDelta = clamp(screenTop - offset, 0, this.state.delta[i]);
-      const currentOffset = offset;
-      offset += this.state.height[i];
-      tempOffset += currentDelta;
-      this.pageRefs.push(ref);
+      if (!delta.length || !height.length) {
+        // set all pages on top on the first render
+        const ref = createRef<Page>();
+        this.pageRefs.push(ref);
+        return child({
+          ref,
+          hardOffset: 0,
+          offset: 0,
+          delta: 0,
+        });
+      }
+
+      // calculate page position
+      const calculatedDelta = clamp(screenTop - globalOffset, 0, delta[i]);
+      let calculatedOffset = globalOffset + calculatedDelta - screenTop;
+      let calculatedHardOffset = 0;
+      if (calculatedOffset > screenHeight) {
+        calculatedHardOffset = screenHeight + 1;
+        calculatedOffset = 0;
+      } else if (calculatedOffset < -this.state.height[i]) {
+        calculatedHardOffset = -this.state.height[i];
+        calculatedOffset = 0;
+      }
+      globalOffset += height[i] + calculatedDelta;
+
       return child({
-        ref,
-        offset: currentOffset + tempOffset,
-        delta: currentDelta,
+        ref: this.pageRefs[i],
+        hardOffset: calculatedHardOffset,
+        offset: calculatedOffset,
+        delta: calculatedDelta,
       });
     });
   }
