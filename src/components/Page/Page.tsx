@@ -7,17 +7,20 @@ export interface PageProps {
   offset: number;
   delta: number;
   style?: CSSProperties;
+  className?: string;
+  centerContent?: boolean;
 }
 
-export class Page extends React.Component<PageProps> {
+export class Page extends React.PureComponent<PageProps> {
   public bodyRef = createRef<HTMLDivElement>();
   public innerRef = createRef<HTMLDivElement>();
 
   public render() {
+    const className = [this.props.className || "", "page"].join(" ");
     return (
       <div
         ref={this.bodyRef}
-        className="page"
+        className={className}
         style={{
           top: this.props.hardOffset,
           transform: `translateY(${this.props.offset}px)`,
@@ -27,7 +30,7 @@ export class Page extends React.Component<PageProps> {
         <div
           ref={this.innerRef}
           style={{ transform: `translate(${-this.props.delta}px)` }}
-          className="page-inner"
+          className={!!this.props.centerContent ? "page__centered" : "page-inner"}
         >
           {this.props.children}
         </div>

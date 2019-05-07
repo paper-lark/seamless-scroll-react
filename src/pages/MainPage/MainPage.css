@@ -1,0 +1,11 @@
+.main-page {
+    background: var(--color-blue-8);
+}
+
+.main-page__header {
+    margin-bottom: 32px;
+}
+
+.main-page__text {
+    margin-top: 16px;
+}

@@ -1,0 +1,11 @@
+.description-page {
+    background: var(--color-blue-9);
+}
+
+.description-page__text-container {
+    display: flex;
+}
+
+.description-page__text:not(:first-child) {
+    margin-left: 48px;
+}

@@ -1,0 +1,30 @@
+.panorama-page {
+    background: var(--color-grey-7);
+    padding: 0;
+}
+
+.panorama-page__image {
+    width: 4096px;
+    height: 971px;
+    vertical-align: top;
+}
+
+.panorama-page__credits {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 4px 6px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.2;
+    display: inline-block;
+    border-radius: 3px;
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+}
+
+.panorama-page__credits-text {
+    display: inline-block;
+    padding: 2px 3px;
+}

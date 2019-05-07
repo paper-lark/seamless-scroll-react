@@ -1,0 +1,13 @@
+.footer-page {
+    background: var(--color-grey-9);
+    min-height: 100vh;
+}
+
+.footer-page__text {
+    margin: 8px;
+    min-width: unset;
+}
+
+.footer-page__link {
+    color: var(--color-volcano-5);
+}

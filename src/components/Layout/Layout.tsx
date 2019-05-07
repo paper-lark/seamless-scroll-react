@@ -28,11 +28,21 @@ export class Layout extends React.Component<LayoutProps, LayoutState> {
 
   public componentDidMount() {
     document.addEventListener("scroll", this.debouncedHandleScroll);
+    document.addEventListener("load", this.updateChildrenHeights);
+    window.onresize = this.updateChildrenHeights;
+    if (!!(document as any).fonts) {
+      (document as any).fonts.onloadingdone = this.updateChildrenHeights;
+    }
     this.updateChildrenHeights();
   }
 
   public componentWillUnmount() {
     document.removeEventListener("scroll", this.debouncedHandleScroll);
+    document.removeEventListener("load", this.updateChildrenHeights);
+    window.onresize = null;
+    if (!!(document as any).fonts) {
+      (document as any).fonts.onloadingdone = null;
+    }
   }
 
   public render() {
@@ -43,8 +53,7 @@ export class Layout extends React.Component<LayoutProps, LayoutState> {
     return <div className="layout">{this.getPages()}</div>;
   }
 
-  private handleScroll = (event: Event) => {
-    // TODO: implement own
+  private handleScroll = () => {
     this.forceUpdate();
   }
 
@@ -94,7 +103,9 @@ export class Layout extends React.Component<LayoutProps, LayoutState> {
     });
   }
 
-  private updateChildrenHeights() {
+  private updateChildrenHeights = () => {
+    console.log("Recalculating heights...");
+
     const height = this.pageRefs.map((ref) =>
       !!ref.current ? ref.current.getHeight() : 0,
     );

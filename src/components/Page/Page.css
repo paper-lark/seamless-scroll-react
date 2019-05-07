@@ -1,5 +1,4 @@
 .page {
-    min-height: 50vh;
     width: 100%;
     position: absolute;
     padding: 48px 32px;
@@ -10,11 +9,18 @@
     overflow: hidden;
 }
 
+.page__centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .page-inner {
     position: sticky;
     display: inline-block;
     top: 0;
     left: 0;
     transform: translate(0px);
-    transition: transform 300ms linear;
+    transition: transform 200ms linear;
 }
