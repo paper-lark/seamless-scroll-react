@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/seamless-scroll-react/static/css/main.c79d9499.chunk.css",
-    "main.js": "/seamless-scroll-react/static/js/main.f06c661d.chunk.js",
-    "main.js.map": "/seamless-scroll-react/static/js/main.f06c661d.chunk.js.map",
+    "main.css": "/seamless-scroll-react/static/css/main.8e520137.chunk.css",
+    "main.js": "/seamless-scroll-react/static/js/main.47ecefbc.chunk.js",
+    "main.js.map": "/seamless-scroll-react/static/js/main.47ecefbc.chunk.js.map",
     "runtime~main.js": "/seamless-scroll-react/static/js/runtime~main.439f760f.js",
     "runtime~main.js.map": "/seamless-scroll-react/static/js/runtime~main.439f760f.js.map",
-    "static/js/2.4cb8172f.chunk.js": "/seamless-scroll-react/static/js/2.4cb8172f.chunk.js",
-    "static/js/2.4cb8172f.chunk.js.map": "/seamless-scroll-react/static/js/2.4cb8172f.chunk.js.map",
+    "static/js/2.251c9143.chunk.js": "/seamless-scroll-react/static/js/2.251c9143.chunk.js",
+    "static/js/2.251c9143.chunk.js.map": "/seamless-scroll-react/static/js/2.251c9143.chunk.js.map",
     "index.html": "/seamless-scroll-react/index.html",
-    "precache-manifest.5d9c1d19deb51e497c25a0f3d4c6efcf.js": "/seamless-scroll-react/precache-manifest.5d9c1d19deb51e497c25a0f3d4c6efcf.js",
+    "precache-manifest.0fce5cdcbddf0710e575e947ae61d6a8.js": "/seamless-scroll-react/precache-manifest.0fce5cdcbddf0710e575e947ae61d6a8.js",
     "service-worker.js": "/seamless-scroll-react/service-worker.js",
-    "static/css/main.c79d9499.chunk.css.map": "/seamless-scroll-react/static/css/main.c79d9499.chunk.css.map"
+    "static/css/main.8e520137.chunk.css.map": "/seamless-scroll-react/static/css/main.8e520137.chunk.css.map"
   }
 }
