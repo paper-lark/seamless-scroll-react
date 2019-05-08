@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/seamless-scroll-react/static/css/main.8e520137.chunk.css",
+    "main.css": "/seamless-scroll-react/static/css/main.7f9d8cdc.chunk.css",
     "main.js": "/seamless-scroll-react/static/js/main.47ecefbc.chunk.js",
     "main.js.map": "/seamless-scroll-react/static/js/main.47ecefbc.chunk.js.map",
     "runtime~main.js": "/seamless-scroll-react/static/js/runtime~main.439f760f.js",
@@ -8,8 +8,8 @@
     "static/js/2.251c9143.chunk.js": "/seamless-scroll-react/static/js/2.251c9143.chunk.js",
     "static/js/2.251c9143.chunk.js.map": "/seamless-scroll-react/static/js/2.251c9143.chunk.js.map",
     "index.html": "/seamless-scroll-react/index.html",
-    "precache-manifest.0fce5cdcbddf0710e575e947ae61d6a8.js": "/seamless-scroll-react/precache-manifest.0fce5cdcbddf0710e575e947ae61d6a8.js",
+    "precache-manifest.134e349028f9ba663e55e8625b3514f5.js": "/seamless-scroll-react/precache-manifest.134e349028f9ba663e55e8625b3514f5.js",
     "service-worker.js": "/seamless-scroll-react/service-worker.js",
-    "static/css/main.8e520137.chunk.css.map": "/seamless-scroll-react/static/css/main.8e520137.chunk.css.map"
+    "static/css/main.7f9d8cdc.chunk.css.map": "/seamless-scroll-react/static/css/main.7f9d8cdc.chunk.css.map"
   }
 }
