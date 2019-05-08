@@ -4,9 +4,10 @@
 }
 
 .panorama-page__image {
-    width: 4096px;
-    height: 971px;
+    width: 3072px;
+    height: 728px;
     vertical-align: top;
+    filter: invert(25%) grayscale(75%);
 }
 
 .panorama-page__credits {

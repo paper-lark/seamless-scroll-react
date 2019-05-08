@@ -1,0 +1,9 @@
+.title-page {
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background: var(--color-grey-9);
+}
+
+.title-page__header {
+    color: var(--color-yellow-5);
+}

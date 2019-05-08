@@ -1,0 +1,12 @@
+.details-page {
+    background: var(--color-grey-8);
+    color: var(--color-grey-2);
+}
+
+.details-page__text-container {
+    display: flex;
+}
+
+.details-page__text:not(:first-child) {
+    margin-left: 56px;
+}

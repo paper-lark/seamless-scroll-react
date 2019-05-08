@@ -8,17 +8,16 @@ export type MainPageProps = LayoutElementPosition;
 export const MainPage: React.FC<MainPageProps> = (props: MainPageProps) => {
   return (
     <Page {...props} key="main-page" className="main-page">
-      <h1 className="main-page__header">Seamless scroll</h1>
       <p className="main-page__text">
-        This page is a little demonstration of what I called a "seamless
-        scroll". The main point of it is that you can scroll the page normally
-        without the need to reach for your mouse to scroll long vertical
-        elements.
+        This page is a little demonstration of what I called a "seamless scroll"
+        layout. The main goal of such layout is to release the user from
+        necessity of scrolling the page horizontally while allowing some of the
+        page elements to overflow page width.
       </p>
       <p className="main-page__text">
         Enough talk, time to see it in action!{" "}
-        <span role="img" aria-label="Shooting star">
-          💫
+        <span role="img" aria-label="Fire">
+          🔥
         </span>
       </p>
     </Page>

@@ -18,7 +18,7 @@ export class Page extends React.PureComponent<PageProps> {
   public render() {
     const className = [this.props.className || "", "page"].join(" ");
     return (
-      <div
+      <section
         ref={this.bodyRef}
         className={className}
         style={{
@@ -30,11 +30,13 @@ export class Page extends React.PureComponent<PageProps> {
         <div
           ref={this.innerRef}
           style={{ transform: `translate(${-this.props.delta}px)` }}
-          className={!!this.props.centerContent ? "page__centered" : "page-inner"}
+          className={
+            !!this.props.centerContent ? "page__centered" : "page-inner"
+          }
         >
           {this.props.children}
         </div>
-      </div>
+      </section>
     );
   }
 

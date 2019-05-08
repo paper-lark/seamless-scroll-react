@@ -1,11 +1,12 @@
 .main-page {
-    background: var(--color-blue-8);
+    background: var(--color-grey-3);
+    color: var(--color-grey-10);
 }
 
 .main-page__header {
     margin-bottom: 32px;
 }
 
-.main-page__text {
+.main-page__text:not(:first-child) {
     margin-top: 16px;
 }

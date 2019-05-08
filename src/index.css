@@ -1,46 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400');
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
-
 :root {
-  --color-blue-3: #91d5ff;
-  --color-blue-4: #69c0ff;
-  --color-blue-5: #40a9ff;
-  --color-blue-6: #1890ff;
-  --color-blue-7: #096dd9;
-  --color-blue-8: #0050b3;
-  --color-blue-9: #003a8c;
-  --color-blue-10: #002766;
-
-  --color-cyan-5: #36cfc9;
-  --color-cyan-6: #13c2c2;
-  --color-cyan-7: #08979c;
-  --color-cyan-8: #006d75;
-  --color-cyan-9: #00474f;
-  --color-cyan-10: #002329;
-
   --color-yellow-5: #ffec3d;
-  --color-yellow-6: #fadb14;
-  --color-yellow-7: #d4b106;
-  --color-yellow-8: #ad8b00;
-  --color-yellow-9: #876800;
-  --color-yellow-10: #614700;
-
-  --color-volcano-3: #ffbb96;
-  --color-volcano-4: #ff9c6e;
   --color-volcano-5: #ff7a45;
-  --color-volcano-6: #fa541c;
-  --color-volcano-7: #d4380d;
-  --color-volcano-8: #ad2102;
-  --color-volcano-9: #871400;
-  --color-volcano-10: #610b00;
-
-  --color-lime-5: #bae637;
-  --color-lime-6: #a0d911;
-  --color-lime-7: #7cb305;
-  --color-lime-8: #5b8c00;
-  --color-lime-9: #3f6600;
-  --color-lime-10: #254000;
 
   --color-grey-1: #ffffff;
   --color-grey-2: #fafafa;
@@ -52,38 +12,33 @@
   --color-grey-8: #595959;
   --color-grey-9: #262626;
   --color-grey-10: #000000;
-
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: 'Raleway', Verdana, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-style: normal;
-  font-weight: 400;
-  color: var(--color-grey-2);
 }
 
 * {
   margin: 0;
   padding: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: LatoWeb, Verdana, sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  font-style: normal;
+  font-weight: 400;
+  font-variant-numeric: oldstyle-nums;
 }
 
 h1 {
-  font-family: Montserrat, Verdana, sans-serif;
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 72px;
+  font-family: Adec, Verdana, sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 72px;
+  line-height: 80px;
 }
 
 p {
   max-width: 550px;
-  min-width: 450px;
-}
-
-code {
-  font-family: Inconsolata, 'Courier New', Courier, monospace;
-  font-size: 18px;
-  color: var(--color-yellow-5);
+  min-width: 500px;
 }
 
 a {

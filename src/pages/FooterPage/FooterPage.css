@@ -1,5 +1,6 @@
 .footer-page {
     background: var(--color-grey-9);
+    color: var(--color-grey-3);
     min-height: 100vh;
 }
 
